@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>BitListen - Bitcoin Transaction Visualizer</title>
+		<title>SatoshiGood Bitcoin Transaction Visualizer</title>
 		<meta name="description" content="Realtime Bitcoin transaction visualizer. See and hear new transactions, trades and blocks as they occur.">
 		<meta name="keywords" content="BitListen,Listen To Bitcoin,Bitcoin,transactions,visualizer,trades,mtgox,blockchain">
 		<meta name="author" content="Maximillian Laumeister">
-		<link rel="author" href="https://plus.google.com/100865127821381452608/posts" />
 		<link rel="stylesheet" type="text/css" href="jquery.nouislider.custom.css">
 		<link rel="stylesheet" type="text/css" href="engine.css">
 		<!--[if IE]>
@@ -21,9 +20,9 @@
 	        {
 	          "@context": "http://schema.org",
 	          "@type": "WebApplication",
-	          "name": "BitListen",
+	          "name": "SatoshiGoodListen",
 	          "alternateName": "Listen To Bitcoin",
-	          "url": "http://www.bitlisten.com",
+	          "url": "http://www.SatoshiGood.com",
 	          "applicationCategory": "Visualization",
 	          "license": "https://opensource.org/licenses/MIT",
 	          "operatingSystem": "all",
@@ -35,8 +34,8 @@
 	          ],
 	          "author": {
 	              "@type" : "Person",
-	              "name" : "Maximillian Laumeister",
-	              "url" : "https://www.maxlaumeister.com/"
+	              "name" : "Scott Davignon",
+	              "url" : "https://scottjdavignon.wordpress.com/"
 	          },
 	          "offers": {
 	            "@type": "Offer",
@@ -46,16 +45,7 @@
 	        }
 	        </script>
 
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-24440376-9', 'bitlisten.com');
-	  ga('send', 'pageview');
-
-	</script>
+	
 	</head>
 	<body>
 		<div id="header" class="serif interface">
@@ -65,20 +55,18 @@
 			</div>
 			<img src="images/logo.png" alt="BitListen">
 			<div id="headerInfo">
-				<p>
+				<!--p>
 					Realtime Bitcoin transaction visualizer. (Formerly 'Listen To Bitcoin').
-				</p>
+				</p-->
 				<p>
 					Most donations get highlighted: <span id="donationAddress" qrtarget="bitcoin:1istendqWJ1mKvrdRUQZDL2F3tVDDyKdj">1istendqWJ1mKvrdRUQZDL2F3tVDDyKdj</span>
 					<br />
 					<span id="musicianDonation"></span>
 				</p>
-				<p class="subdued">
-					By <a href="https://www.maxlaumeister.com/">Maximillian Laumeister</a> &bull; <a href="https://www.maxlaumeister.com/contact/">Contact</a> &bull; <a href="https://github.com/MaxLaumeister/bitlisten">Source Code</a>
-				</p>
+				
 			</div>
 		</div>
-		<table id="pageSplitter" border="0">
+		<table id="pageSplitter" border="0" style="display:none;">
 			<tr><td id="chartCell">
 			<div  id="chartElement" class="contentPanel" style="position: relative;">
 			    <div id="chartHolder"></div>
@@ -129,14 +117,17 @@
 
 					</div>
 				</div>
-		        <span id="waitingForTransactions">
-		        Waiting for transactions...
-		        </span>
+		        
 			</div>
 			</td>
 			</tr>
 		</table>
+		
+		<span id="waitingForTransactions">
+		        Waiting for transactions...
+		        </span>
 		<div id="hideInterface" class="serif" onclick='toggleInterface()'>[ Hide Interface ]</div>
+		
 		<div id="noJavascript">
 			<p>
 				Please enable Javascript, or try a different web browser.
