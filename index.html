@@ -55,9 +55,7 @@
 			</div>
 			<img src="images/logo.png" alt="BitListen">
 			<div id="headerInfo">
-				<!--p>
-					Realtime Bitcoin transaction visualizer. (Formerly 'Listen To Bitcoin').
-				</p-->
+		
 				<p>
 					Most donations get highlighted: <span id="donationAddress" qrtarget="bitcoin:1istendqWJ1mKvrdRUQZDL2F3tVDDyKdj">1istendqWJ1mKvrdRUQZDL2F3tVDDyKdj</span>
 					<br />
@@ -66,7 +64,7 @@
 				
 			</div>
 		</div>
-		<table id="pageSplitter" border="0" style="display:none;">
+		<table id="pageSplitter" border="0">
 			<tr><td id="chartCell">
 			<div  id="chartElement" class="contentPanel" style="position: relative;">
 			    <div id="chartHolder"></div>
@@ -117,15 +115,15 @@
 
 					</div>
 				</div>
-		        
+		        <span id="waitingForTransactions">
+		        Waiting for transactions...
+		        </span>
 			</div>
 			</td>
 			</tr>
 		</table>
 		
-		<span id="waitingForTransactions">
-		        Waiting for transactions...
-		        </span>
+		
 		<div id="hideInterface" class="serif" onclick='toggleInterface()'>[ Hide Interface ]</div>
 		
 		<div id="noJavascript">
